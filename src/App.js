@@ -28,7 +28,7 @@ function App() {
         navigate('/processing', { state: { fileName: file.name } });
 
         // Send PDF to backend
-        const response = await axios.post('http://0.0.0.0:8000/upload', formData, {
+        const response = await axios.post('https://b7b1-14-139-243-245.ngrok-free.app/upload/', formData, {
           headers: {
             'Content-Type': 'multipart/form-data'
           }
