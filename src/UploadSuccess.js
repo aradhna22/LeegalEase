@@ -9,7 +9,7 @@ function UploadSuccess() {
   return (
     <div className="Appp">
       <h1>Upload Success!!</h1>
-      <p>{fileName ? File "${fileName}" has been successfully processed! : 'No file uploaded.'}</p>
+      <p>{fileName ? `File "${fileName}" has been successfully processed!` : 'No file uploaded.'}</p>
       
       {summary ? (
         <div className="summary-container">
